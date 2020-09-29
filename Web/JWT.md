@@ -1,7 +1,5 @@
 JWT
 
-# Json Web Tokens
-
 - Install Json Web Tokens extensions in burp.
 
 ## Theory
