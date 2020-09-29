@@ -1,4 +1,4 @@
-Login form bypass
+Login_form_bypass
 
 ## SQL Truncate
 
@@ -24,10 +24,10 @@ https://resources.infosecinstitute.com/sql-truncation-attack/
 Use the intruder with a payloadallthethings file :
 - load payloads in username
 - write whatever you want in password field (pass for example)
-- check the size resp body, and the code and reason !!!
+- check : **size / resp body / code / reason**
 
-Find payloads in this fabulous cheat sheet : 
-https://portswigger.net/web-security/sql-injection/cheat-sheet
+Find payloads in this fabulous cheat sheet : https://portswigger.net/web-security/sql-injection/cheat-sheet
+
 
 ## SQLMap (USE AT YOUR OWN RISK !)
 
@@ -37,7 +37,7 @@ https://portswigger.net/web-security/sql-injection/cheat-sheet
 
 ---
 
-## WFuzz to enumerate the usernames with a different output from the website (have to find how to do this with ffuf)
+## WFuzz to enumerate the usernames when you detect a specific message  
 
 - ```wfuzz -c -z file,SecLists/Usernames/Names/names.txt --hs "Try again" -d "username=FUZZ&password=anything" http://10.10.10.73/login.php```
 

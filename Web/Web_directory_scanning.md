@@ -1,4 +1,4 @@
-Web directory scanning
+Web_directory_scanning
 
 ## ffuf
 
@@ -7,12 +7,7 @@ Web directory scanning
 ### Test parameters
 
 - docker.com/test.php?FUZZ=blabla
-- you'll find the size of normal request :
-
-
-![78ea34f3b714d9a4c16ee826eddfc50a.png](../_resources/5bd64ab09d94423ea8b54b0ff370a389.png)
-
-- here it s 24
+- Find the size of the response you want to filter on, for example 24
 
 - add ```-fs 24``` to hide the response with the length of 24
 
