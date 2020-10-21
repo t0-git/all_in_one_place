@@ -28,8 +28,10 @@ https://gist.github.com/dwisiswant0/23cc87d2149202652d265ab6ebe9e85f
 `nucleir [-target/-l] [domain.tld/urls.txt]`
 
 
-
-
 ## To read for continuous scan
 
 https://medium.com/@dwi.siswanto98/weaponizes-nuclei-workflows-to-pwn-all-the-things-cd01223feb77
+
+## Fingerprint with shodan 
+
+`shodan domain <DOMAIN> | awk '{print $3}' | httpx -silent | nuclei -t nuclei-templates`

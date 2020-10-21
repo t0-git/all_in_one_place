@@ -42,3 +42,47 @@ https://www.owasp.org/index.php/Unrestricted_File_Upload
 - Changing the content doesn’t seem to matter.
 
 - Based on the filter testing, it seems like I can name a file .php and include PHP code, as long as I change the Content-Type header to a valid image.
+
+## Bypass by changing extension :
+
+- ASP:
+
+.aspx
+.config
+.ashx
+.asmx
+.aspq
+.axd
+.cshtm
+.cshtml
+.rem
+.soap
+.vbhtm
+.vbhtml
+.asa
+.asp
+.cer
+.shtml
+
+- PHP:
+
+.php
+.php5
+.php3
+.php2
+.shtml
+.html
+.php.png
+(double extension attack)
+What we would typically want to achieve is to circumvent the controls restricting the type of content that can be uploaded onto the website and try to upload something interesting like:
+
+ASP / PHP file with a webshell – RCE
+HTML file with Javascript code – XSS
+EICAR file – test possibility of hosting malware
+Protip: Don’t forget to always try the NULL byte injection trick as well, e.g.:
+
+file.jpg%00shell.php
+shell.php%00file.jpg
+shell.php%00.jpg
+
+https://twitter.com/pwntheweb/status/1288112909520781316

@@ -26,25 +26,47 @@ HMACSHA256(
 ### None algorithm attack
 
 - Application support the none algorith, signature is useless.
-- Decode the token
-- Change whatever you want inside the jwt
+- Capture the JWT.
+- Change the algorithm to None.
+- Change the content of the claims in the body with whatever you want e.g.: email: attacker@gmail.com
+- Send the request with the modified token and check the result.
+
+
 
 ### Changing algorithm
 
-- Example change RS256 : assymetric to HS256 : symetric, so you can use the public key to sign and verify
+- If the algorithm is RS256 change to HS256 and sign the token with the public key (which you can get by visiting jwks Uri / mostly it will be the public key from the site’s https certificate)
+- Send the request with the modified token and check the response.
+
 
 ### Signature not checked
 
 - Just remove the signature.
+
+### Install jwt heartbreaker on burp.
 
 ### Brute force key
 
 jwtbrute
 jwt cracker
 
+### Check for proper server-side session termination (OTG-SESS-006):
+
+- Check if the application is using JWT tokens for authentication.
+- If so, login to the application and capture the token. (Mostly web apps stores the token in the local storage of the browser)
+- Now logout of the application.
+- Now make a request to the privileged endpoint with the token captured earlier.
+- Sometimes, the request will be successful as the web apps just delete the token from browser and won’t blacklist the tokens in the backend.
+
 ## Online JWT debugger
 
 https://jwt.io/#debugger-io
+
+## Roadmap
+
+![bf63cc72584b01b0bd61cd15b6dffda4.png](../../_resources/3198ef480ec946fd81563b37cad9036f.png)
+
+
 
 ---
 

