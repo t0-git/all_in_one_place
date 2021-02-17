@@ -1,5 +1,12 @@
 Upload_restrictions
 
+Upload restrictions
+
+## Basics
+
+- replace .php by php3
+
+
 ## Have to work on
 
 https://www.exploit-db.com/docs/english/45074-file-upload-restrictions-bypass.pdf

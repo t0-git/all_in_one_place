@@ -31,7 +31,7 @@ Web Cache Deception Scanner
 
 ## Less noise in burp
 
-![22870a886681e6ef7795de21d195b701.png](../../_resources/5d03e96cf49d4636a3ad838cc42e69fd.png)
+![22870a886681e6ef7795de21d195b701.png](../../_resources/96b8ce12cf9a4b2c97f9920b04de1aa6.png)
 ```
 .*\.google\.com
 .*\.gstatic\.com

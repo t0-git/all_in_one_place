@@ -10,6 +10,8 @@ Forwarded
 X-Forwarded-For
 ```
 
+For these, try `localhost` or `127.0.0.1` ...
+
 ---
 
 ## Param miner extension "guest headers" in Burp

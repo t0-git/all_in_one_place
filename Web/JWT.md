@@ -9,6 +9,7 @@ JWT
 1. Header usually contains typ (type of the token), and alg (algorithm used to sign the token)
 2. Payload contains a lot of information (mail address, username, userid ...)
 3. Signature : The signature is used to verify the message wasn't changed along the way, and, in the case of tokens signed with a private key, it can also verify that the sender of the JWT is who it says it is. To create the signature part you have to take the encoded header, the encoded payload, a secret, the algorithm specified in the header, and sign that.
+
 For example if you want to use the HMAC SHA256 algorithm, the signature will be created in the following way:
 ```
 HMACSHA256(
@@ -19,9 +20,20 @@ HMACSHA256(
 
 - A JWT typically looks like the following.
 
-```xxxxx.yyyyy.zzzzz```
+```xxxxx.yyyyy.zzzzz``` base64 encoded.
+
+- JWT can provide the following mechanism : Encryptions / Signature.
+
+### Different kind of signatures
+
+RSA based
+Elliptic curves
+HMAC
+None
 
 ## Kind of attacks
+
+- Use decoder in burp, easy and pain free. Pay attention, it could miss one `=` or 2.
 
 ### None algorithm attack
 
@@ -30,6 +42,8 @@ HMACSHA256(
 - Change the algorithm to None.
 - Change the content of the claims in the body with whatever you want e.g.: email: attacker@gmail.com
 - Send the request with the modified token and check the result.
+
+- If it doesn't work, try to remove the signature.
 
 
 
@@ -64,7 +78,7 @@ https://jwt.io/#debugger-io
 
 ## Roadmap
 
-![bf63cc72584b01b0bd61cd15b6dffda4.png](../../_resources/3198ef480ec946fd81563b37cad9036f.png)
+![bf63cc72584b01b0bd61cd15b6dffda4.png](../../_resources/b85e88dd7dd34d669a103a58419edc06.png)
 
 
 

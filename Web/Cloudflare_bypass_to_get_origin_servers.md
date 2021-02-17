@@ -15,7 +15,7 @@ Two options :
 
 - Then visit one of this IP :
 
-![aa23979c25d7ea5da749173344d9ce47.png](../../_resources/5fc1fed8c1364e6b933c7d3044b13c01.png)
+![aa23979c25d7ea5da749173344d9ce47.png](../../_resources/afba4450c2e444499a140ae7a32abb5d.png)
 
 - or use dorks on censys.io search : 
 `parsed.names: <target>`

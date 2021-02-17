@@ -1,0 +1,10 @@
+.obsidian/
+
+# Add below lines to exclude OS settings and caches
+
+.trash/
+.DS_Store
+
+target/
+draft/
+test.md

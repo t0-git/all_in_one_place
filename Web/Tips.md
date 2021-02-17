@@ -6,6 +6,11 @@ https://pentester.land/
 
 ---
 
+## Web ui to test your code 
+
+ jsfiddle.net 
+
+---
 
 
 ## Don't find what you need ? List of writeups, search with keywords.
@@ -159,6 +164,14 @@ By @akita_zen
 
 git clone https://github.com/vincd/wappylyzer.git
 
+---
+
+## NTLM authentication with BurpSuite
+
+1. proxy / options / uncheck "Set Connection Close"
+2. User Options / platform authentication / add NTLM
+
+NTLM authenticates the TCP connection, which is not kept alive when using a proxy. This trick solve the issue.
 
 
 
