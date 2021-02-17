@@ -12,5 +12,4 @@ Simply search what you need.
 
 **Enjoy, share and feel free to comment and contribute !**
 
-
-![Pasted image 20210217191818.png](../_resources/Pasted\ image 20210217191818.png)
+![](_resources/Pasted%20image%2020210217193519.png)
