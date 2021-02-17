@@ -1,5 +1,3 @@
-Content_sniffing
-
 ## Theory
 
 - Send data to the browser without sending information of what you are sending.

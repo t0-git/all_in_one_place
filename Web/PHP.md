@@ -1,6 +1,3 @@
-PHP
-
-
 ## Check for registered php stream
 
 - with a lfi you can do some tricks : example :`configfile=../../../../../../../etc/passwd`

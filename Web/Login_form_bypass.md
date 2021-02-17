@@ -1,5 +1,3 @@
-Login_form_bypass
-
 ## SQLi
 
 ### mysql

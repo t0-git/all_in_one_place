@@ -1,5 +1,3 @@
-IDOR
-
 ## Theory
 
 - Insecure Direct Object Reference 

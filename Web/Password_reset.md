@@ -1,5 +1,3 @@
-Password_reset
-
 ## Account takeover using password reset manipulating email parameter
 
 Using the post request, add attacker email by :

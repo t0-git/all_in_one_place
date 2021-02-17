@@ -1,5 +1,3 @@
-Cloudflare_bypass_to_get_origin_servers
-
 ## Theory
 
 Cloudflare is a security layer that protect a website. It works as a middleman between a server and users. It protect against web-based attacks such as XSS and SQLi Injections, Buffer Overflow and most significantly, DDoS attacks. In general, an attacker can't access origin server directly if cloudflare is enabled. So, it could be difficult to deploy such attacks.
@@ -15,7 +13,7 @@ Two options :
 
 - Then visit one of this IP :
 
-![aa23979c25d7ea5da749173344d9ce47.png](../../_resources/afba4450c2e444499a140ae7a32abb5d.png)
+![aa23979c25d7ea5da749173344d9ce47.png](../_resources/afba4450c2e444499a140ae7a32abb5d.png)
 
 - or use dorks on censys.io search : 
 `parsed.names: <target>`

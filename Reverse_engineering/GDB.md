@@ -1,5 +1,3 @@
-GDB
-
 ## Tips and tricks 
 
 ### Easy 

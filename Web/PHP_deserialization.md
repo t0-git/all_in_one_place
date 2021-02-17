@@ -1,5 +1,3 @@
-PHP_deserialization
-
 ## Theory 
 
 - Serialization is when an object in a programming language (say, a Java or PHP object) is converted into a format that can be stored or transferred. Whereas deserialization refers to the opposite: it’s when the serialized object is read from a file or the network and converted back into an object.

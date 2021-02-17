@@ -1,5 +1,3 @@
-OAuth
-
 ## Have to work on
 
 https://medium.com/@darutk/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85

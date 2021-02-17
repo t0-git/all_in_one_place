@@ -1,5 +1,3 @@
-Sub_Domain_related
-
 ## Finding sub domains easily
 
 https://twitter.com/TobiunddasMoe/status/1275130179870961664

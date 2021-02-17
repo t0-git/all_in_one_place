@@ -1,5 +1,3 @@
-Web_directory_scanning
-
 ## ffuf
 
 - ```ffuf -w path/to/wordlist -u https://fuff.io/FUZZ -e .php -c```

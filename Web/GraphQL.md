@@ -1,5 +1,3 @@
-GraphQL
-
 ## Use introspection to have the structure of the database
 
 ```

@@ -1,5 +1,3 @@
-Cache_poisonning
-
 ## Theory 
 
 When the cache received an HTTP request, it will determine if there is a cached reponse. If so, it will use it and will don't forward to the back end server.

@@ -1,5 +1,3 @@
-Tips
-
 ## Bunch of web related stuff to read 
 
 https://pentester.land/

@@ -1,5 +1,3 @@
-Race_condition
-
 ## Theory
 
 

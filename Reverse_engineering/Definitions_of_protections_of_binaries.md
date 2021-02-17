@@ -1,5 +1,3 @@
-Definitions_of_protections_of_binaries
-
 ## RELRO
 
 - The RELRO stands for ‘relocation read-only’ and this protection ensures that the global offset table (GOT) cannot be overwritten. But in this case, it’s partial RELRO so the only pragmatic difference is that the BSS section comes before the GOT. This prevents buffer overflows in global variables overwriting the GOT.

@@ -1,5 +1,3 @@
-Logic_Error_(Business_Logic_Error)
-
 ## Theory
 
 - Here, the idea is to manipulate a functionnality. You know how something works, but you try to manipulate things which shouldn't be manipulated normally.

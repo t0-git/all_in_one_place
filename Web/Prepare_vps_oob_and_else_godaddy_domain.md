@@ -1,5 +1,3 @@
-Prepare_vps_oob_and_else_(godaddy domain)
-
 ## How to
 
 ### Domain

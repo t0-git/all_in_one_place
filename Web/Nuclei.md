@@ -1,5 +1,3 @@
-Nuclei
-
 ## What it is ?
 
 Configurable targeted scanning based on templates. 

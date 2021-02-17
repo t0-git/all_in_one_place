@@ -1,5 +1,3 @@
-HTTP_ Version_2_and_3
-
 ## HTTP2
 
 - after 1.1, 2 : compatibility with 1.1

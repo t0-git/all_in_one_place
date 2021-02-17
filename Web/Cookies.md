@@ -1,5 +1,3 @@
-Cookies
-
 ## Theory
 
 - Key value pairs of data sent from the server residing on the client for a fixed period of time.

@@ -1,5 +1,3 @@
-Python
-
 ## Command execution
 
 - pay attention if it's python2 or python3

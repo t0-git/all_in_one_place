@@ -1,5 +1,3 @@
-XXE / XML
-
 # XML / XXE
 
 ## XPath

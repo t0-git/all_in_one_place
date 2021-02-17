@@ -1,6 +1,4 @@
-Ghidra
-
-Ghidra
+# Ghidra
 
 - Functions which are with _ before are created at the compilation.
 - To patch a binary : right click on asm instruction, `patch instruction`

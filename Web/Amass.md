@@ -1,5 +1,3 @@
-Amass
-
 ## API KEY
 
 - Create an alias using 'amass --config <config_file>'

@@ -1,5 +1,3 @@
-Anti_debugging_protection_in_windows
-
 ## PEB : large fs:30h
 
 https://en.wikipedia.org/wiki/Process_Environment_Block

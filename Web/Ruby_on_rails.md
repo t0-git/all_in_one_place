@@ -1,4 +1,4 @@
-Ruby on rails
+## Theory
 
 - Ruby-on-Rails enforces "convention" over "configuration" which really helps to guess class names and attributes' name...
 

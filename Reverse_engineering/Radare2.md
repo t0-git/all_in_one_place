@@ -1,5 +1,3 @@
-Radare2
-
 ## Tips : 
 - Open the binary with `-d` to not have any pb with entrypoints or else
 - Open the binary with `-w` to write what you want

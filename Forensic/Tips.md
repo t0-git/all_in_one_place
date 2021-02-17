@@ -1,5 +1,3 @@
-Tips
-
 ## Padded kernel file
 
 - a padded file : everything which is non system is erased by 0's, so you will not have access to the user land.

@@ -1,5 +1,3 @@
-Shodan dorks
-
 ## RocketMQ
 
  org:target.com http.title:rocketmq-console

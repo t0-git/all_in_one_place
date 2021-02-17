@@ -1,5 +1,3 @@
-Tips
-
 ## General stuff
 
 - If after injecting your payload, after a push function, your payload become weird, increase the size of the stack.

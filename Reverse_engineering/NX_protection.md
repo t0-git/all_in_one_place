@@ -1,5 +1,3 @@
-NX_protection
-
 ## Check if it's enabled
 
 Know the flags of the stack :

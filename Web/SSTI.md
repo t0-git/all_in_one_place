@@ -1,5 +1,3 @@
-SSTI
-
 ## Test SSTI
 
 - Methodology in Payload all the things is very cool

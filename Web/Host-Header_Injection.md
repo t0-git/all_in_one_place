@@ -1,5 +1,3 @@
-Host-Header_Injection
-
 ## Headers to test
 ```
 X-Forwarded-Host

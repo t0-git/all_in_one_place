@@ -1,6 +1,5 @@
-MongoDB_and_NoSQL_Injection
 
-payloadallthethings
+As always : payloadallthethings
 
 ## Bypass authentication 
 

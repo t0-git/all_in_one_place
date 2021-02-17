@@ -1,7 +1,3 @@
-Upload_restrictions
-
-Upload restrictions
-
 ## Basics
 
 - replace .php by php3

@@ -1,5 +1,3 @@
-Same-Origin_Policy
-
 ## Theory
 
 - How the browser restricts a number of security critical features :

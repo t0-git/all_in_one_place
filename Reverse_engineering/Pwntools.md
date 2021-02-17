@@ -1,5 +1,3 @@
-Pwntools_(send_payload)
-
 ## Tips
 
 - terminal.context : `("termite", "-e")`

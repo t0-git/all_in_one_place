@@ -1,5 +1,3 @@
-SQLI
-
 ## Tips 
 
 - If you try an injection and you have a good error message, analyze it before going on.

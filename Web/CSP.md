@@ -1,6 +1,4 @@
-CSP
-
-List of CSPs : 
+## List of CSPs : 
 
 ```
 script-src : This directive specifies allowed sources for JavaScript. This includes not only URLs loaded directly into <script> elements, but also things like inline script event handlers (onclick) and XSLT stylesheets which can trigger script execution.
@@ -31,7 +29,8 @@ upgrade-insecure-requests: This directive instructs browsers to rewrite URL sche
 sandbox: sandbox directive enables a sandbox for the requested resource similar to the <iframe> sandbox attribute. It applies restrictions to a page's actions including preventing popups, preventing the execution of plugins and scripts, and enforcing a same-origin policy.
 ```
 
-Sources: Sources are nothing but the defined directives values. Below are some common sources that are used to define the value of the above directives.
+## Sources
+Sources are nothing but the defined directives values. Below are some common sources that are used to define the value of the above directives.
 
 ```
    * : This allows any URL except data: blob: filesystem: schemes

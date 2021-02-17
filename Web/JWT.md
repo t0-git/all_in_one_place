@@ -1,4 +1,3 @@
-JWT
 
 - Install Json Web Tokens extensions in burp.
 
@@ -78,7 +77,7 @@ https://jwt.io/#debugger-io
 
 ## Roadmap
 
-![bf63cc72584b01b0bd61cd15b6dffda4.png](../../_resources/b85e88dd7dd34d669a103a58419edc06.png)
+![bf63cc72584b01b0bd61cd15b6dffda4.png](../_resources/b85e88dd7dd34d669a103a58419edc06.png)
 
 
 

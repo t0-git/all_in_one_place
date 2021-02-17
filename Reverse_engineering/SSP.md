@@ -1,5 +1,3 @@
-SSP_(canari)
-
 ## How it works 
 
 Add a secret value to the stack, called **canari**, just befeore the address in EBP.

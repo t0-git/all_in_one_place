@@ -1,5 +1,3 @@
-Shellshock
-
 ## When you have a call to cgi-bin
 
 - Modify a header in burp, for example user-agent:

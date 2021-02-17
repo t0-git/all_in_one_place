@@ -1,5 +1,3 @@
-CSRF
-
 ## Theory
 
 - When an attacker tricks a victim going to a page controlled by the attacker, which then submits data to the target site as the victim.
