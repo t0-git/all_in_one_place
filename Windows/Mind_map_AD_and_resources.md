@@ -1,6 +1,8 @@
 ## Mind_map
 
-![Pentest-ad.png](../../_resources/96e61f3de1b64550a392bc7dc9f6fdbb.png)
+
+![](../_resources/Pasted%20image%2020210312124122.png)
+
 
 ## Resources
 
