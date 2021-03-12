@@ -22,6 +22,8 @@ Two options :
 
 - Now we have multiple IPs from Censys, but which one is the origin server ?
 
+---
+
 ## First way
 
 - Tool CloudFlair helps to get the origin server and it matches HTML identical contents to the main domain to determine the origin IP.

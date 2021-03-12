@@ -1,6 +1,9 @@
 ## Basics
 
 - replace .php by php3
+- Replace the Content-Type by : Content-Type: image/png
+- take a png, add php code inside, rename it as image.php
+- add a null byte : cmd.php%00.jpg
 
 
 ## Have to work on

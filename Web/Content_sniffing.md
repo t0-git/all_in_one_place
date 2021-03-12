@@ -4,7 +4,7 @@
 
 ## MIME Sniffing
 
-- Browser will often not just loo at the Content-Type header that the server is passing, but also the contents of the page. If it looks enough like HTML, it will be parsed as HTML. 
+- Browser will often not just look at the Content-Type header that the server is passing, but also the contents of the page. If it looks enough like HTML, it will be parsed as HTML. 
 
 ## Encoding sniffing
 

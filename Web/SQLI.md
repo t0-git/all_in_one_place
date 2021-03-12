@@ -27,7 +27,9 @@ We are logged in !
 - Always with our previous login screen, we will try to extract the username
 - `'UNION SELECT SLEEP(1*CHAR_LENGTH(username)) FROM admins;#`
 
-## List
+## List$
+
+seclists and payloadallthethings
 ```
 /?q=1
 /?q=1'
@@ -47,7 +49,8 @@ We are logged in !
 ---
 
 
-## Sandboxes databases
+## Sandboxes databases to test 
+
 By @hackerscrolls
 
 SQL Fiddle (sqlfiddle.com)
@@ -78,6 +81,8 @@ SQLite
 MySQL
 PostgreSQL
 MS SQL Server 2017
+
+---
 
 ## Useful ones in MySQL
 

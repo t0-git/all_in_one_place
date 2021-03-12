@@ -41,7 +41,7 @@ Web Cache Deception Scanner
 ---
 
 
-## Find IDORs with Autorize and Auto Reapeater
+## Find IDORs with Authorize and Auto Reapeater
 
 - Authenticate with 2 different accounts in two browsers
 

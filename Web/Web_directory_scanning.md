@@ -21,6 +21,11 @@
 - or ```Host: FUZZ.htb```
 - or even ```Host: FUZZ.FUZZ``` 
 
+### Don't forget to fuzz subdomains
+
+- `ffuf -w <wordlist> -u FUZZ.<url>`
+
+
 ### POST request
 
 - Before trying to fuzz it, check the format of the content type, and put the same inside. Generally : ```-X POST -H "Content-Type: application/x-www-form-urlencoded"'```

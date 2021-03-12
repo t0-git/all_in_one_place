@@ -1,13 +1,5 @@
 ## Check for registered php stream
 
-- with a lfi you can do some tricks : example :`configfile=../../../../../../../etc/passwd`
-
-- You may need to add %00 at the end.
-
-- if file is allowed : ```=file:///etc/passwd```
-
-data, php ...
-
 https://dzone.com/articles/the-powerful-resource-of-php-stream-wrappers
 
 ---
@@ -63,6 +55,7 @@ Experimenting with the functionality of the VPNGenerator, it is easy  to spot wh
   • http://php.net/manual/en/function.preg-replace.php
  
  `preg_replace(/x/e, system("id"), x)`
+ 
  ---
  
 ## Bypass disable_functions

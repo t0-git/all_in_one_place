@@ -52,7 +52,7 @@ Find payloads in this fabulous cheat sheet : https://portswigger.net/web-securit
 
 ## MySQL bypass login form
 
-- By default, MySQLL will perform a case insensitive comparison, so admin Admin and AdMin are the same account. When a user is created, the comparison could be done programatically, but when you try to login, the comparison is done by the database. Try to create AdMin !
+- By default, MySQL will perform a case insensitive comparison, so admin Admin and AdMin are the same account. When a user is created, the comparison could be done programatically, but when you try to login, the comparison is done by the database. Try to create AdMin !
 - Another test: mysql ignores traling space (admin[space])
 
 ---
@@ -61,13 +61,14 @@ Find payloads in this fabulous cheat sheet : https://portswigger.net/web-securit
 
 - Intercept your request with burpsuite and then run sqlmap on it : ```sqlmap -level=5 -risk=3 -p username -r \<yourfile\>``` 
 - If you manual tested it before and it should work (because you test for example admin and have an input, and admin' -- and the same input) add ```--string='\<message appeared\>'```
-- As always, if sqlmap from the repo doesn't work with ```-r```, download from Git.
+- If sqlmap from the repo doesn't work with ```-r```, download from Git.
 
 ---
 
 ## WFuzz to enumerate the usernames when you detect a specific message  
 
-- ```wfuzz -c -z file,SecLists/Usernames/Names/names.txt --hs "Try again" -d "username=FUZZ&password=anything" http://10.10.10.73/login.php```
+- `wfuzz -c -z file,SecLists/Usernames/Names/names.txt --hs "Try again" -d "username=FUZZ&password=anything" http://10.10.10.73/login.php`
+- use `-mr` with ffuf
 
 ---
 

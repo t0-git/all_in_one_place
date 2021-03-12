@@ -102,12 +102,6 @@ If one of these work, you just have to find the good one !
 
 ---
 
-## TOOL TO TEST 
-
-https://github.com/Damian89/extended-xss-search
-
----
-
 ## Check how it is reflected
 
 - Any weird character ? Encoded ? Double encoded ? 

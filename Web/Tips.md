@@ -152,16 +152,6 @@ By @Haoneses
 - Make sure to also try to extract other file types such as .php, .json etc. (Step 2).
 
 
-## Find out what websites are built with
-By @akita_zen
-
-
-- This one can help identify what technology a particular website (or a list of websites) was built with.
-
-`cat urls-alive.txt | parallel -j 50 "echo {}; python3 main.py analyze --url {}"`
-
-git clone https://github.com/vincd/wappylyzer.git
-
 ---
 
 ## NTLM authentication with BurpSuite
